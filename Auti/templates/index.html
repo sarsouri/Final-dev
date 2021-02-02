@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart</title>
+</head>
+<body style="background-color:black;">
+<h1> <center><p> Chart </p>  </center> </h1>
+
+
+<table>
+    <tr>
+        <td style="color: #2c9797;">Time</td>
+        <td style="color: #2c9797;">Amount</td>
+        <td style="color: #2c9797;">Currency</td>
+        <td style="color: #2c9797;">Target_Currency</td>
+        <td style="color: #2c9797;">Rate</td>
+        <td style="color: #2c9797;">Conversion</td>
+    </tr>
+    {% for i in info %}
+        <tr>
+            <td style="color: #2c9797;"> {{ i[0] }} </td>
+            <td style="color: #2c9797;"> {{ i[1] }} </td>
+            <td style="color: #2c9797;"> {{ i[2] }} </td>
+            <td style="color: #2c9797;"> {{ i[3] }} </td>
+            <td style="color: #2c9797;"> {{ i[4] }} </td>
+            <td style="color: #2c9797;"> {{ i[5] }} </td>
+
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <title>get your currency</title>
+   
+
+</head>
+<body>
+
+    <body style="background-color:#AAE9CD;">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 mx-auto">
+
+                        <div class="card card-body text-center mt-5">
+
+                            <h1 class="heading display-5 pb-3">currency swap</h1>
+
+                        <form action ={{ val }} id="currency-form" method="post">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text">From</span>
+                                    <select class="selectpicker" name = "firstCurrency">
+                                     <option>USD</option>
+                                     <option>EUR</option>
+                                     <option>JPY</option>
+                                     <option>BGN</option>
+                                     <option>CZK</option>
+                                     <option>DKK</option>
+                                     <option>GBP</option>
+                                     <option>HUF</option>
+                                     <option>PLN</option>
+                                     <option>RON</option>
+                                     <option>SEK</option>
+                                     <option>CHF</option>
+                                     <option>ISK</option>
+                                     <option>NOK</option>
+                                     <option>HRK</option>
+                                     <option>RUB</option>
+                                     <option>TRY</option>
+                                     <option>AUD</option>
+                                     <option>BRL</option>
+                                     <option>CAD</option>
+                                     <option>CNY</option>
+                                     <option>HKD</option>
+                                     <option>IDR</option>
+                                     <option>ILS</option>
+                                     <option>INR</option>
+                                     <option>KRW</option>
+                                     <option>MXN</option>
+                                     <option>MYR</option>
+                                     <option>NZD</option>
+                                     <option>PHP</option>
+                                     <option>SGD</option>
+                                     <option>THB</option>
+                                     <option>ZAR</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text">To</span>
+                                    <select class="selectpicker" name = "secondCurrency">
+                                            <option>USD</option>
+                                            <option>EUR</option>
+                                            <option>JPY</option>
+                                            <option>BGN</option>
+                                            <option>CZK</option>
+                                            <option>DKK</option>
+                                            <option>GBP</option>
+                                            <option>HUF</option>
+                                            <option>PLN</option>
+                                            <option>RON</option>
+                                            <option>SEK</option>
+                                            <option>CHF</option>
+                                            <option>ISK</option>
+                                            <option>NOK</option>
+                                            <option>HRK</option>
+                                            <option>RUB</option>
+                                            <option>TRY</option>
+                                            <option>AUD</option>
+                                            <option>BRL</option>
+                                            <option>CAD</option>
+                                            <option>CNY</option>
+                                            <option>HKD</option>
+                                            <option>IDR</option>
+                                            <option>ILS</option>
+                                            <option>INR</option>
+                                            <option>KRW</option>
+                                            <option>MXN</option>
+                                            <option>MYR</option>
+                                            <option>NZD</option>
+                                            <option>PHP</option>
+                                            <option>SGD</option>
+                                            <option>THB</option>
+                                            <option>ZAR</option>
+                                           </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" name = "amount" id = "amount" placeholder="currency" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <input id ="submitbtn" type="submit" value = "calculate" class = "btn btn-danger">
+                            </div>
+
+                        </form>
+
+
+                        {% if info %}
+                        <div id="results" class = "pt-4">
+                            <h5>your new amount</h5>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-text">{{info.amount}} {{info.firstCurrency}} </span>
+                                    <div class="form-control" id="total">
+                                       {{info.result }} {{info.secondCurrency}}
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                        {% endif %}
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center>
+            <form action = {{ val2 }} id="currency-form1" method="post">
+                <div class="form-group">
+                    <input id ="submitbtn1" type="submit" value = "Auti" class = "btn btn-danger">
+                </div>
+
+            </form>
+                </center>
+
+
+
+</body>
+</html>
+
